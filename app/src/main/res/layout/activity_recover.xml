@@ -57,7 +57,7 @@
             android:layout_gravity="bottom|center_horizontal"
             android:layout_marginBottom="16dp"
             android:text="SALAR DE UYUNI"
-            android:textColor="@color/white"
+            android:textColor="@color/beige"
             android:textSize="18sp"
             android:textStyle="bold" />
 
