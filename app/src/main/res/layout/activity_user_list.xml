@@ -20,10 +20,10 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
-            android:id="@+id/tvTitle"
+            android:id="@+id/tvTitulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Listas de Usuarios"
+            android:text="@string/user_list_title"
             android:textColor="@color/black"
             android:textSize="32sp"
             android:textStyle="bold"
@@ -31,10 +31,10 @@
             android:layout_marginBottom="8dp" />
 
         <TextView
-            android:id="@+id/tvWelcome"
+            android:id="@+id/tvBienvenida"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="¡Bienvenido, ya formas parte de nuestra comunidad!"
+            android:text="@string/welcome_message"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:gravity="center" />
@@ -55,13 +55,10 @@
         android:layout_marginTop="32dp"
         android:layout_marginBottom="32dp">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewUsers"
+        <ListView
+            android:id="@+id/lvUsuarios"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rounded_input_background"
-            android:padding="16dp"
-            tools:listitem="@layout/item_user" />
+            android:layout_height="match_parent" />
 
     </LinearLayout>
 
@@ -89,7 +86,7 @@
             android:layout_marginBottom="16dp" />
 
         <TextView
-            android:id="@+id/tvGoToMainMenu"
+            android:id="@+id/tvMenuPrincipal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ir al Menu Principal"

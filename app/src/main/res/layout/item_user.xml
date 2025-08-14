@@ -3,18 +3,35 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@drawable/rounded_input_background"
+    android:layout_margin="4dp">
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/tvNombre"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:text="Nombre del Usuario"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="8dp" />
 
-        <TextView
-            android:id="@+id/tvNombre"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
-    </LinearLayout>
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="email@ejemplo.com"
+        android:textColor="@color/dark_blue"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:padding="4dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_blue"
+        android:layout_marginTop="8dp" />
 
 </LinearLayout>
